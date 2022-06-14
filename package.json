@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "node server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "startdev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/jasmine-9000/portfolio-master/issues"
   },
-  "homepage": "https://github.com/jasmine-9000/portfolio-master#readme"
+  "homepage": "https://github.com/jasmine-9000/portfolio-master#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }

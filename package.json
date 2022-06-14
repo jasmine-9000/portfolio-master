@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.1",
+  "description": "Jasmine's Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasmine-9000/portfolio-master.git"
+  },
+  "keywords": [
+    "Meow",
+    "meow"
+  ],
+  "author": "Jasmine Kerr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasmine-9000/portfolio-master/issues"
+  },
+  "homepage": "https://github.com/jasmine-9000/portfolio-master#readme"
+}

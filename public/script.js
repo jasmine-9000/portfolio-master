@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasmine's Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<script>
+const DEBUG = true;
+    
     class Card  {
         constructor(fronttext, backtext, themecolor=null, thumbnailURL=null) {
             this.fronttext = fronttext;
@@ -46,20 +38,3 @@
 
         document.querySelector('p').insertBefore(newCardDiv, undefined);
     }
-</script>
-<body>
-    <p>Meow meow meow meow meow meow</p>
-    <div class="entry">
-        
-    </div>
-    <div class="maincountainer" id="meow"
-         data-thumbnail="./src"
-         data-theme="pink">
-        <div class="thecard">
-          <div class="thefront">Johnny</div>
-          <div class="theback">amber</div>
-        </div>
-        <p></p>
-    </div>
-</body>
-</html>

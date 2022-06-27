@@ -40,7 +40,7 @@ window.onload = () => {
     let newCard = new Card("Someone else's cat", "u/AC_Strand on Reddit", "pink", "./images/cat_1.jpg");
 
     let newCardDiv = newCard.render();
-    let a = Array.from(document.querySelectorAll('div')).pop();
+    let a = Array.from(document.querySelector('.cardgrid'));
 
-    document.querySelector('p').insertBefore(newCardDiv, undefined);
+    document.querySelector('.cardgrid').insertBefore(newCardDiv, undefined);
 }

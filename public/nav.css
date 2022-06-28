@@ -1,9 +1,15 @@
 nav {
     height: 80px;
     background-color: hsl(199, 41%, 33%);
-    display: flex;
 }
-nav * {
+nav ul {
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+nav ul.nav__links {
     color: white;
-    text-decoration: none;;
+    font-weight: 400;
+    font-size: 16px;
 }

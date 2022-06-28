@@ -1,0 +1,9 @@
+nav {
+    height: 80px;
+    background-color: hsl(199, 41%, 33%);
+    display: flex;
+}
+nav * {
+    color: white;
+    text-decoration: none;;
+}

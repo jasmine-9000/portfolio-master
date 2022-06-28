@@ -1,3 +1,23 @@
+/*
+    reset things
+
+*/
+@import url('/reset.css');
+
+/*
+main stuff 
+
+*/
+
+html {
+    font-family: 'Graphik', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 32pt;
+}
+
 .maincountainer
 {
     position: relative ;
@@ -55,3 +75,4 @@
     text-align: center;
     transform: rotateY(180deg);      
 }
+

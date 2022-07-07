@@ -41,7 +41,7 @@ h1 {
 }
 
 .thefront{ 
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,6 +56,16 @@ h1 {
     text-align: center;
     color:white;   
 }
+
+.thefront .img_credits,
+.theback .img_credits
+ {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    
+    font-size: 12px;
+}
   
 .theback {
     position: absolute;
@@ -68,6 +78,7 @@ h1 {
     /* fallback color: pink */
     background-color: pink;
     /*background-image:url(https://th.bing.com/th/id/OIP.r0JOWI8ViDUA79SsxHTp1gAAAA?pid=ImgDet&rs=1);*/
+    background-size: contain;
     color:black;
     font-size:3em;
     text-align: center;

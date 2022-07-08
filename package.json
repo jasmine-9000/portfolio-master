@@ -6,7 +6,10 @@
   "scripts": {
     "test": "node server.js",
     "start": "node server.js",
-    "startdev": "nodemon server.js"
+    "startdev": "nodemon server.js",
+    "watchts": "tsc -w script.ts --target es2022 --outfile ./public/script.js",
+    "startdevwithts": "concurrently --kill-others \"npm run startdev\" \"npm run watchts\"",
+    "": ""
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,8 @@
     "nodemon": "^2.0.16"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
   }
 }

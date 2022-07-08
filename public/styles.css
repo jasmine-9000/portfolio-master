@@ -36,7 +36,7 @@ h1 {
     transform-style: preserve-3d;
     transition: all 0.8s ease; 
 }
-.thecard:hover {
+.thecard.flipped{
     transform:rotateY(180deg);
 }
 
@@ -62,11 +62,16 @@ h1 {
  {
     position: absolute;
     bottom: 0;
-    left: 30%;
-    
+    left: 0%;
+    width: 100%;
     font-size: 12px;
 }
-  
+.thefront .img_credits a,
+.theback .img_credits a
+{
+    text-decoration: none;
+    color: inherit;
+}
 .theback {
     position: absolute;
     top: 0;

@@ -36,7 +36,8 @@ class Card {
                 console.log(this.thumbnailURL);
             }
             theback.style.backgroundImage = `url('${this.thumbnailURL}'`;
-            theback.style.backgroundSize = 'contain';
+            theback.style.backgroundSize = 'cover';
+            theback.style.backgroundRepeat = 'no-repeat';
             console.log(theback);
         }
         // put all credits logic in a separate class.
@@ -46,18 +47,25 @@ class Card {
         thecard.appendChild(thefront);
         thecard.appendChild(theback);
         parentElement.appendChild(thecard);
+        // ap
+        parentElement.addEventListener('click', () => {
+            console.log(parentElement);
+            thecard.classList.toggle('flipped');
+        });
         return parentElement;
     }
 }
 window.onload = () => {
-    let newCard = new Card("Someone else's cat", "u/AC_Strand on Reddit", "pink", "./images/cat_1.jpg");
-    let nextCardCredits = new Credits("Photo by <a href='https://unsplash.com/@roiboscht?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Stephan H.</a> on <a href='https://unsplash.com/s/photos/thistle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>", "hsl(20, 80%, 100%");
-    let nextCard = new Card("Photo", ",", "pink", "./images/marigold-unsplash.jpg", nextCardCredits);
+    let newCard = new Card("Someone else's cat", "", "pink", "./images/cat_1.jpg", new Credits("u/AC_Strand on Reddit", "white"));
+    let nextCard = new Card("Photo", ",", "pink", "./images/marigold-unsplash.jpg", new Credits("Photo by <a href='https://unsplash.com/@jkiwi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>J K</a> on <a href='https://unsplash.com/photos/2j8X-RpB1sM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>", "hsl(20, 80%, 100%"));
+    let card1 = new Card("Thistle Branch", "Thistle Branch", "#cccccc", "./images/stephan-h-thistle-unsplash.jpg", new Credits("Photo by <a href='https://unsplash.com/@roiboscht?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Stephan H.</a> on <a href='https://unsplash.com/s/photos/thistle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"));
     let newCardDiv = newCard.render();
     let nextCardDiv = nextCard.render();
+    let card1Div = card1.render();
     // let a = Array.from(document.querySelector('.cardgrid'));
     document.querySelector('.cardgrid')?.insertBefore(newCardDiv, null);
     document.querySelector('.cardgrid')?.insertBefore(nextCardDiv, null);
+    document.querySelector('.cardgrid')?.insertBefore(card1Div, null);
 };
 class Credits {
     creditsHTML;

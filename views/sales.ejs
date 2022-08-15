@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with materialize</title>
+    <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="">
+    <%- include('partials/nav.ejs') %>
+    <div class="container">
+        <h1 class="pink-text accent-4 ">Jasmine's Portfolio</h1>
+
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="/images/cat_1.jpg" alt="cat" srcset="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/images/jasmine.jpg" alt="Jasmine Bush" srcset="">
+                        <span class="card-title">Jasmine's Offerings</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I offer web services, bush trimmings, etc.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="/contact">Get a quote</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/images/eleni-koureas-peony-unsplash.jpg" alt="Peony" srcset="">
+                        <span class="card-title">Jasmine's Offerings</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I offer web services, bush trimmings, etc.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="/contact">Get a quote</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/images/marigold-unsplash.jpg" alt="Jasmine Bush" srcset="">
+                        <span class="card-title">Jasmine's Offerings</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I offer web services, bush trimmings, etc.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="/contact">Get a quote</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/images/jasmine.jpg" alt="Jasmine Bush" srcset="">
+                        <span class="card-title">Jasmine's Offerings</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I offer web services, bush trimmings, etc.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="/contact">Get a quote</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s1 red darken-4">1</div>
+            <div class="col s1 red darken-4">2</div>
+            <div class="col s1 red darken-4">3</div>
+            <div class="col s1 red darken-4">4</div>
+            <div class="col s1 red darken-4">5</div>
+            <div class="col s1 red darken-4">6</div>
+            <div class="col s1 red darken-4">7</div>
+            <div class="col s1 red darken-4">8</div>
+            <div class="col s1 red darken-4">9</div>
+            <div class="col s1 red darken-4">10</div>
+            <div class="col s1 red darken-4">11</div>
+            <div class="col s1 red darken-4">12</div>
+            <div class="col s1 red darken-4">13</div>
+            <div class="col s1 red darken-4">14</div>
+            <div class="col s1 red darken-4">15</div>
+            <div class="col s1 red darken-4">16</div>
+            <div class="col s1 red darken-4">17</div>
+            <div class="col s1 red darken-4">18</div>
+            <div class="col s1 red darken-4">19</div>
+            <div class="col s1 red darken-4">20</div>
+            <div class="col s1 red darken-4">21</div>
+            <div class="col s1 red darken-4">22</div>
+            <div class="col s1 red darken-4">23</div>
+            <div class="col s1 red darken-4">24</div>
+            <div class="col s1 red darken-4">25</div>
+            <div class="col s1 red darken-4">26</div>
+            <div class="col s1 red darken-4">27</div>
+            <div class="col s1 red darken-4">28</div>
+            <div class="col s1 red darken-4">29</div>
+            <div class="col s1 red darken-4">30</div>
+        </div>
+    </div>
+
+</body>
+
+<!--JavaScript at end of body for optimized loading (materialize CSS)-->
+<script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log("Loaded!");
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {draggable: true});
+        var parallaxElems = document.querySelectorAll('.parallax');
+        var instances2 = M.Parallax.init(parallaxElems, {});
+        //var instance = M.Sidenav.getInstance(document.querySelector('.sidenav'));
+        //instance.open();
+    });
+</script>
+</html>

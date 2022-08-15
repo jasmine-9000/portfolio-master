@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>   <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <%- include('partials/nav.ejs'); %>
+    <div class="container">
+        <div class="row">
+            <h1 class="col">Contact</h1>
+        </div>
+        <div class="row">
+            <form action="/contact" method="POST" class="col s12">
+                <div class="input-field col s6">
+                    <input class="validate" placeholder="John" type="text" name="first_name" id="first_name">
+                    <label for="first_name">First name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input class="validate" placeholder="Cena" type="text" name="last_name" id="last_name">
+                    <label for="last_name">Last name</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input type="text" class="validate" name="email" id="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input type="text" class="validate" name="website" id="website">
+                    <label for="website">Website (optional)</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea name="message" id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Your message</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+<script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+<script>
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {draggable: true});
+</script>
+</html>

@@ -11,7 +11,7 @@
     <nav>
         <div class="nav-wrapper pink darken-4"> 
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <a href="#" class="brand-logo center">Logo</a>
+            <a href="#" class="brand-logo center">Jasmine's Portfolio</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contact</a></li>
@@ -19,7 +19,17 @@
             </ul>
         </div>
     </nav>
+    
+    <ul class="sidenav pink lighten-5" id="mobile-demo">
+        <li><a href="/" class="pink-text text-darken-4">Home</a></li>
+        <li><a href="#" class="pink-text text-darken-4">Contact</a></li>
+        <li><a href="#" class="pink-text text-darken-4">Projects</a></li>
+    </ul>
     <div class="container">
+        <div class="row">
+
+            <h1 class="col">Contact</h1>
+        </div>
         <div class="row">
             <form action="/contact" method="POST" class="col s12">
                 <div class="input-field col s6">
@@ -30,11 +40,28 @@
                     <input class="validate" placeholder="Cena" type="text" name="last_name" id="last_name">
                     <label for="last_name">Last name</label>
                 </div>
+                <div class="input-field col s12 m6">
+                    <input type="text" class="validate" name="email" id="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input type="text" class="validate" name="website" id="website">
+                    <label for="website">Website (optional)</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea name="message" id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Your message</label>
+                </div>
             </form>
         </div>
     </div>
+    
 </body>
 
 <script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
-
+<script>
+    
+    var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {draggable: true});
+</script>
 </html>

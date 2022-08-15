@@ -19,7 +19,20 @@ app.get('/', (req, res) => {
 app.get('/oldhome', (req, res) => {
     res.render(__dirname + '/views/oldhome.ejs');
 })
+const cards = [
+    {
+        title: "Four card feature",
+        subtitle: "This is a frontendmentor.io challenge."
+    },
+    {
+        title: "Coding boot camp",
+        subtitle: "this is a boot camp sales page from frontendmentor.io"
+    }
 
+]
+app.get('/portfolio', (req, res) => {
+    res.render(__dirname + '/views/portfolio.ejs', {cards: cards });
+})
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}...`)

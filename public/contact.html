@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>   <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper pink darken-4"> 
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" class="brand-logo center">Logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <form action="/contact" method="POST" class="col s12">
+                <div class="input-field col s6">
+                    <input class="validate" placeholder="John" type="text" name="first_name" id="first_name">
+                    <label for="first_name">First name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input class="validate" placeholder="Cena" type="text" name="last_name" id="last_name">
+                    <label for="last_name">Last name</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+
+</html>

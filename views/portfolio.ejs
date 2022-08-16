@@ -14,10 +14,17 @@
         <div class="row">
             <% for(let i = 0; i < cards.length; i++) { %>
                 <div class="col s12 m6 l4">
+                    
                     <div class="card">
+                        <div class="card-image">
+                            <img src="<%= cards[i].thumbnailsrc %>" alt="<%= cards[i].title + ' image' %>" srcset="">
+                        </div>
                         <div class="card-content grey-text">
                             <span class="card-title"><%- cards[i].title %></span>
                             <p><%- cards[i].subtitle %></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="<%= cards[i].hyperlink %>">Visit this page</a>
                         </div>
                     </div>
                 </div>

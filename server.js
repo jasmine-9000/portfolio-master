@@ -22,11 +22,27 @@ app.get('/oldhome', (req, res) => {
 const cards = [
     {
         title: "Four card feature",
-        subtitle: "This is a frontendmentor.io challenge."
+        subtitle: "This is a sample four card feature pagefrom a frontendmentor.io challenge.",
+        hyperlink: "https://www.frontendmentor.io",
+        thumbnailsrc: "images/website_previews/four-card-feature-desktop-preview.jpg"
     },
     {
         title: "Coding boot camp",
-        subtitle: "this is a boot camp sales page from frontendmentor.io"
+        subtitle: "this is a boot camp sales page from frontendmentor.io",
+        hyperlink: "https://www.frontendmentor.io",
+        thumbnailsrc: "images/website_previews/coding-bootcamp-desktop-preview.jpg"
+    },
+    {
+        title: "Fylo Data Storage",
+        subtitle: "This is a sample data storage app from frontendmentor.io",
+        hyperlink: "https://www.frontendmentor.io",
+        thumbnailsrc: "images/website_previews/fylo-data-storage-desktop-preview.jpg"
+    }, 
+    {
+        title: "No image sample card",
+        subtitle: "ads;jklfdas;jklfads;kljadsfjkl;asdfj;klfdsaljk;dsfakjl;df",
+        hyperlink: "https://google.com",
+        thumbnailsrc: "n/a"
     }
 
 ]

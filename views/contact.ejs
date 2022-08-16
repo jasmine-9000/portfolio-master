@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>   <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
+    <meta name="description" content="Web developer Portfolio Contact Page">
+    <!-- tag sources: 
+    
+    https://css-tricks.com/essential-meta-tags-social-media/
+
+    -->
+    <!-- google tags-->
+    <meta name="google" content="nositelinkssearchbox">
+
+    <!-- facebook tags-->
+    <meta name="og:title" content="Contact Jasmine">
+    <meta name="og:type" content="contact.page">
+    <meta name="og:url" content="http://localhost:80/">
+    <meta name="og:image" content="/images/jasmine.jpg">
+
+    <!-- twitter tags-->
+    <meta name="twitter:title" content="Contact Jasmine">
+    <meta name="twitter:description" content="Web developer Portfolio Contact Page">
+    <meta name="twitter:image" content="/images/jasmine.jpg">
+    <meta name="twitter:card" content="/images/jasmine.jpg">
+
+    <title>Contact</title>
+    <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="canonical" href="https://example.com/dresses/green-dresses">
 </head>
 <body>
     <%- include('partials/nav.ejs'); %>
@@ -14,6 +37,10 @@
             <h1 class="col">Contact</h1>
         </div>
         <div class="row">
+            <div class="chip">
+                Tag
+                <i class="close material-icons">close</i>
+            </div>
             <form action="/contact" method="POST" class="col s12">
                 <div class="input-field col s6">
                     <input class="validate" placeholder="John" type="text" name="first_name" id="first_name">
@@ -35,6 +62,10 @@
                     <textarea name="message" id="textarea1" class="materialize-textarea"></textarea>
                     <label for="textarea1">Your message</label>
                 </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                
             </form>
         </div>
     </div>

@@ -37,11 +37,16 @@
             <h1 class="col">Contact</h1>
         </div>
         <div class="row">
+            <h6 class="col">
+                This contact form doesn't work yet. TODO: make it work .
+            </h6>
+        </div>
+        <div class="row">
             <div class="chip">
                 Tag
                 <i class="close material-icons">close</i>
             </div>
-            <form action="/contact" method="POST" class="col s12">
+            <form id="contact_submit" action="/contact" method="POST" class="col s12">
                 <div class="input-field col s6">
                     <input class="validate" placeholder="John" type="text" name="first_name" id="first_name">
                     <label for="first_name">First name</label>
@@ -51,8 +56,9 @@
                     <label for="last_name">Last name</label>
                 </div>
                 <div class="input-field col s12 m6">
-                    <input type="text" class="validate" name="email" id="email">
-                    <label for="email">Email</label>
+                    <input type="email" class="validate" name="email" id="email_inline">
+                    <label for="email_inline">Email</label>
+                    <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
                 </div>
                 <div class="input-field col s12 m6">
                     <input type="text" class="validate" name="website" id="website">
@@ -74,7 +80,20 @@
 
 <script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
 <script>
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, {draggable: true});
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // initialize sidebar
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {draggable: true});
+        document.getElementById('contact_submit').addEventListener('submit', (e) => {
+            
+        })
+
+    })
+    // very basic front-end javascript email validation. 
+    // will also do server-side checking.
+    function emailIsValid (email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+    }
 </script>
 </html>

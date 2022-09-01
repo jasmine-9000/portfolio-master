@@ -83,6 +83,12 @@ const cards = [
         thumbnailsrc: "images/website_previews/easybank-desktop-preview.jpg"
     }, 
     {
+        title: "Tic-Tac-Toe",
+        subtitle: "The game tic-tac-toe in pure JS",
+        hyperlink: "https://tic-tac-toe-100devs.netlify.app",
+        thumbnailsrc: "images/website_previews/tictactoe-desktop-preview.webp"
+    }, 
+    {
         title: "No image sample card",
         subtitle: "ads;jklfdas;jklfads;kljadsfjkl;asdfj;klfdsaljk;dsfakjl;df",
         hyperlink: "https://google.com",

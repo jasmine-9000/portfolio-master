@@ -55,20 +55,32 @@ const cards = [
     {
         title: "Four card feature",
         subtitle: "This is a sample four card feature pagefrom a frontendmentor.io challenge.",
-        hyperlink: "https://www.frontendmentor.io",
+        hyperlink: "https://frontend-mentor-100devs-fourcardfeature.netlify.app",
         thumbnailsrc: "images/website_previews/four-card-feature-desktop-preview.jpg"
     },
     {
         title: "Coding boot camp",
         subtitle: "this is a boot camp sales page from frontendmentor.io",
-        hyperlink: "https://www.frontendmentor.io",
+        hyperlink: "https://frontend-mentor-bootcampslider.netlify.app/",
         thumbnailsrc: "images/website_previews/coding-bootcamp-desktop-preview.jpg"
     },
     {
         title: "Fylo Data Storage",
         subtitle: "This is a sample data storage app from frontendmentor.io",
-        hyperlink: "https://www.frontendmentor.io",
+        hyperlink: "https://frontendmentor-100devs-fylodatastorage.netlify.app/",
         thumbnailsrc: "images/website_previews/fylo-data-storage-desktop-preview.jpg"
+    },
+    {
+        title: "Social Media Dashboard",
+        subtitle: "A social media dashboard",
+        hyperlink: "https://frontend-mentor-100devs-socialmediadashboard.netlify.app/",
+        thumbnailsrc: "images/website_previews/social-media-desktop-preview.jpg"
+    },
+    {
+        title: "Easybank Landing Page",
+        subtitle: "A sample bank landing page",
+        hyperlink: "https://frontend-mentor-100devs-easybank.netlify.app",
+        thumbnailsrc: "images/website_previews/easybank-desktop-preview.jpg"
     }, 
     {
         title: "No image sample card",

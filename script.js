@@ -90,3 +90,4 @@ class Credits {
         return this.creditsElement;
     }
 }
+
